@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Surprise for Vee ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     FLOATING PARTICLES
+===================================================== -->
+
+<div id="particles"></div>
+
+
+<!-- =====================================================
+     OPENING SCREEN
+===================================================== -->
+
+<section id="openingScreen" class="opening-screen">
+
+    <div class="opening-glow"></div>
+
+    <div class="opening-content">
+
+        <div class="opening-flower">
+            🌹
+        </div>
+
+        <p class="mini-label">
+            A tiny surprise, made with love
+        </p>
+
+        <h1>
+            Hey Vee… <span>❤️</span>
+        </h1>
+
+        <p class="opening-text">
+            I made something little for you.
+        </p>
+
+        <button id="openButton" class="romantic-button light-button">
+            Open it 🌹
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+        Corry <span>♥</span> Vee
+    </div>
+
+    <button id="musicButton" class="music-button" aria-label="Play music">
+        ♫
+    </button>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     STEP 1
+===================================================== -->
+
+<section id="step1" class="experience-section active">
+
+    <div class="experience-content">
+
+        <div class="flower-icon">
+            ✿
+        </div>
+
+        <p class="eyebrow">
+            Before the important question…
+        </p>
+
+        <h2>
+            Who is the cutest person here? 👀❤️
+        </h2>
+
+        <div class="choice-buttons">
+
+            <button class="choice-button cute-answer">
+                Me 😌
+            </button>
+
+            <button class="choice-button cute-answer">
+                Obviously me 😂
+            </button>
+
+        </div>
+
+        <p id="step1Response" class="response"></p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STEP 2
+===================================================== -->
+
+<section id="step2" class="experience-section">
+
+    <div class="experience-content">
+
+        <div class="flower-icon">
+            🌹
+        </div>
+
+        <p class="eyebrow">
+            A little research
+        </p>
+
+        <h2>
+            If we could disappear somewhere together right now,
+            what would you choose?
+        </h2>
+
+        <div class="date-choice-grid">
+
+            <button class="date-choice" data-choice="Beach date">
+                <span>🌊</span>
+                Beach date
+            </button>
+
+            <button class="date-choice" data-choice="Fancy dinner">
+                <span>🌹</span>
+                Fancy dinner
+            </button>
+
+            <button class="date-choice" data-choice="Night drive">
+                <span>🌙</span>
+                Night drive
+            </button>
+
+            <button class="date-choice" data-choice="Cute coffee date">
+                <span>☕</span>
+                Cute coffee date
+            </button>
+
+        </div>
+
+        <p id="step2Response" class="response"></p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STEP 3
+===================================================== -->
+
+<section id="step3" class="experience-section">
+
+    <div class="experience-content">
+
+        <div class="flower-icon">
+            ♡
+        </div>
+
+        <p class="eyebrow">
+            Be honest now…
+        </p>
+
+        <h2>
+            Do you actually enjoy spending time with
+            <span class="person1">Corry</span>?
+        </h2>
+
+        <div class="choice-buttons">
+
+            <button id="yesEnjoy" class="choice-button">
+                YES ❤️
+            </button>
+
+            <button id="maybeEnjoy" class="choice-button">
+                Maybe 👀
+            </button>
+
+        </div>
+
+        <p id="step3Response" class="response"></p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STEP 4 — BIG QUESTION
+===================================================== -->
+
+<section id="step4" class="experience-section big-question">
+
+    <div class="big-question-overlay"></div>
+
+    <div class="experience-content question-content">
+
+        <p class="suspense-line">
+            Okay…
+        </p>
+
+        <p class="suspense-line">
+            Enough with the small questions.
+        </p>
+
+        <p class="suspense-line">
+            I have one important question for you,
+            <span class="person2">Vee</span>…
+        </p>
+
+        <h1 class="main-question">
+            VEE, WILL YOU GO ON A DATE WITH
+            <span class="person1">CORRY</span>? ❤️🌹
+        </h1>
+
+        <div id="answerArea" class="answer-area">
+
+            <button id="yesDate" class="big-answer yes-button">
+                YES ❤️
+            </button>
+
+            <button id="noDate" class="big-answer no-button">
+                NO 😭
+            </button>
+
+        </div>
+
+        <p id="noMessage" class="no-message"></p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STEP 5 — CELEBRATION
+===================================================== -->
+
+<section id="step5" class="experience-section celebration">
+
+    <div class="experience-content">
+
+        <div class="celebration-heart">
+            ❤️
+        </div>
+
+        <p class="eyebrow">
+            The answer we were hoping for
+        </p>
+
+        <h1>
+            YAYYYYY! ❤️😭🌹
+        </h1>
+
+        <p class="celebration-text">
+            I knew you wouldn't say no to
+            <span class="person1">Corry</span> 😌❤️
+        </p>
+
+        <h2>
+            Now let's choose our date…
+        </h2>
+
+        <button id="openPlanner" class="romantic-button primary-button">
+            Choose Our Date 💕
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STEP 6 — DATE PLANNER
+===================================================== -->
+
+<section id="step6" class="experience-section planner-section">
+
+    <div class="planner-card">
+
+        <p class="eyebrow">
+            The most important part
+        </p>
+
+        <h1>
+            So… when are you free,
+            <span class="person2">Vee</span>? ❤️
+        </h1>
+
+
+        <form id="dateForm">
+
+            <div class="form-row">
+
+                <div class="input-group">
+
+                    <label for="dateInput">
+                        📅 Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="dateInput"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="timeInput">
+                        🕐 Time
+                    </label>
+
+                    <input
+                        type="time"
+                        id="timeInput"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- DATE TYPE -->
+
+            <fieldset>
+
+                <legend>
+                    🌹 What kind of date?
+                </legend>
+
+                <div class="date-type-grid">
+
+                    <label class="type-option">
+                        <input
+                            type="radio"
+                            name="dateType"
+                            value="Beach"
+                            required
+                        >
+                        <span>🌊 Beach</span>
+                    </label>
+
+                    <label class="type-option">
+                        <input
+                            type="radio"
+                            name="dateType"
+                            value="Dinner"
+                        >
+                        <span>🍝 Dinner</span>
+                    </label>
+
+                    <label class="type-option">
+                        <input
+                            type="radio"
+                            name="dateType"
+                            value="Coffee"
+                        >
+                        <span>☕ Coffee</span>
+                    </label>
+
+                    <label class="type-option">
+                        <input
+                            type="radio"
+                            name="dateType"
+                            value="Movie"
+                        >
+                        <span>🎬 Movie</span>
+                    </label>
+
+                    <label class="type-option">
+                        <input
+                            type="radio"
+                            name="dateType"
+                            value="Night drive"
+                        >
+                        <span>🌃 Night drive</span>
+                    </label>
+
+                    <label class="type-option">
+                        <input
+                            type="radio"
+                            name="dateType"
+                            value="Surprise date"
+                        >
+                        <span>🌹 Surprise date</span>
+                    </label>
+
+                    <label class="type-option">
+                        <input
+                            type="radio"
+                            name="dateType"
+                            value="You choose"
+                        >
+                        <span>💕 You choose</span>
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- MESSAGE -->
+
+            <div class="input-group message-group">
+
+                <label for="messageInput">
+                    💌 Anything <span class="person1">Corry</span>
+                    should know?
+                </label>
+
+                <textarea
+                    id="messageInput"
+                    maxlength="500"
+                    placeholder="Tell me what you'd like…"
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="romantic-button primary-button full-button"
+            >
+                Send My Answer to
+                <span class="person1">Corry</span> ❤️
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STEP 7 — CONFIRMATION
+===================================================== -->
+
+<section id="step7" class="experience-section confirmation-section">
+
+    <div class="confirmation-card">
+
+        <div class="confirmation-heart">
+            ❤️
+        </div>
+
+        <p class="eyebrow">
+            Calendar-worthy news
+        </p>
+
+        <h1>
+            IT'S A DATE! ❤️🌹
+        </h1>
+
+
+        <div class="date-summary">
+
+            <div class="summary-item">
+                <span>📅</span>
+                <div>
+                    <small>Date</small>
+                    <strong id="summaryDate">—</strong>
+                </div>
+            </div>
+
+            <div class="summary-item">
+                <span>🕐</span>
+                <div>
+                    <small>Time</small>
+                    <strong id="summaryTime">—</strong>
+                </div>
+            </div>
+
+            <div class="summary-item">
+                <span>🌹</span>
+                <div>
+                    <small>Plan</small>
+                    <strong id="summaryType">—</strong>
+                </div>
+            </div>
+
+            <div class="summary-item">
+                <span>💌</span>
+                <div>
+                    <small>Message</small>
+                    <strong id="summaryMessage">—</strong>
+                </div>
+            </div>
+
+        </div>
+
+
+        <p class="mission-text">
+            <span class="person1">Corry</span>,
+            your mission has been accepted. 😌❤️
+        </p>
+
+
+        <div class="confirmation-buttons">
+
+            <button
+                id="calendarButton"
+                class="romantic-button primary-button"
+            >
+                Save Our Date 💕
+            </button>
+
+            <button
+                id="whatsappButton"
+                class="romantic-button whatsapp-button"
+            >
+                Send This to Corry on WhatsApp 💚
+            </button>
+
+        </div>
+
+
+        <button
+            id="finalButton"
+            class="romantic-button outline-button"
+        >
+            One Last Thing 🌹
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL SCREEN
+===================================================== -->
+
+<section id="step8" class="experience-section final-screen">
+
+    <div class="experience-content">
+
+        <div class="final-flower">
+            ✿
+        </div>
+
+        <p class="eyebrow">
+            To be continued…
+        </p>
+
+        <h1>
+            <span class="person1">Corry</span>
+            <span class="heart-text">♥</span>
+            <span class="person2">Vee</span>
+        </h1>
+
+        <div class="final-lines">
+
+            <p>
+                One date at a time…
+            </p>
+
+            <p>
+                One memory at a time…
+            </p>
+
+            <strong>
+                One beautiful story at a time. ❤️
+            </strong>
+
+        </div>
+
+        <h2>
+            See you on our date,
+            <span class="person2">Vee</span> 🌹
+        </h2>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     MUSIC
+===================================================== -->
+
+<audio id="backgroundMusic" preload="metadata"></audio>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
